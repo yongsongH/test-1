@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+	<title>药品信息管理系统</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="js/style.css">
+    <link rel="stylesheet" type="text/css" href="js/style2.css">
+    <meta http-equiv="Content-Type" content="药品信息管理系统; charset=utf-8" />
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+     <script language="javascript" type="text/javascript">
+			function menuFix() {
+			var sfEls = document.getElementById("nav").getElementsByTagName("li");
+			for (var i=0; i<sfEls.length; i++) {
+			sfEls[i].onmouseover=function() {
+			this.className+=(this.className.length>0? " ": "") + "show";
+			}
+			sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp("( ?|^)show\\b"), "");
+			}
+			}
+			}
+            window.onload=menuFix;
+     </script>
+</head>
+<body>
+ <!--top begin-->
+<div class="top">
+ <div class="wrap">
+  <span class="fl">欢迎您来到<a href="#" title="回到首页" target="_blank">XX医药股份有限公司</a></span>
+  <span class="fr"><a href="#" title="登录" target="_blank">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>登录</strong></a></span>
+ </div>
+</div>
+<!--top end-->
+<!--head begin-->
+<div class="head">
+	<div class="container">
+		<div class="row">
+			<div class="span6">
+			<a href="#" title="回到首页">
+			<img  id="logo" src="images/img_logo.png" alt="药品信息管理系统">
+			</a>
+		</div>
+		<div class="span6">
+		    <form class="form-search">
+                <input class="input-medium search-query" type="text"> 
+                <button type="submit" class="btn">本站搜索</button>
+              </form>
+		</div>
+		</div>
+	 </div>
+ </div>
+<!--head end-->
+<!--导航菜单开始-->
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<nav id="navigation"  style="background-color:#E2E0F1">
+     <div class="container">
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      核心业务
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">制药事业部</a></li>
+                    <li><a href="#">销售事业部</a></li>
+                    <li><a href="#">物流分公司</a></li>
+                    <li><a href="#">供应链管理</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      集团概况
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">产品展示</a></li>
+                    <li><a href="#">新闻中心</a></li>
+                    <li><a href="#">公司介绍</a></li>
+                    <li><a href="#">党组建设</a></li>
+                    </ul>
+                    </li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      信息管理
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">系统管理</a></li>
+                    <li><a href="#">销售管理</a></li>
+                    <li><a href="#">采购管理</a></li>
+                    <li><a href="#">出库管理</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">人力资源</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      联系方式
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">地址：广西省柳州市长风路4号</a></li>
+                    <li><a href="#">邮编：650500</a></li>
+                    <li><a href="#">监督、投诉热线:0772-2514 508  </a></li>
+                    <li><a href="#">监督、投诉邮箱:lzyy9988@sina.com</a></li>
+                    </ul>
+                    </li>   
+                </ul>
+           </div>
+         </div>  
+   </nav>
+<!-- 导航菜单结束 -->
+<!-- 内容开始 -->
+<div class="neirong" style="padding-top: 10px">
+	<div class="row"> <!--侧边菜单开始-->
+		<div class="span4">
+			<ul id="nav">
+			 <li><a href="#">核心业务</a>
+				<ul>
+					<li><a href="#">制药事业部</a>
+						<ul>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						</ul>
+					</li>
+					<li><a href="#">销售事业部</a>
+						<ul>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+					</ul>
+					</li>
+					<li>
+						<a href="/">物流分公司</a>
+						<ul>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+						<li><a href="">三级菜单</a></li>
+					    </ul>
+					</li>
+					<li>
+						<a href="#">供应链管理</a>
+						<ul>
+						  <li><a href="">三级菜单</a></li>
+						  <li><a href="">三级菜单</a></li>
+						  <li><a href="">三级菜单</a></li>
+						  <li><a href="">三级菜单</a></li>
+						  <li><a href="">三级菜单</a></li>
+						</ul>
+					</li>
+				 </ul>
+			  </li>
+				<li>
+					<a href="#">集团概况</a>
+					<ul>
+						<li><a href="">产品展示</a></li>
+						<li><a href="">新闻中心</a></li>
+						<li><a href="">公司介绍</a></li>
+						<li><a href="">党组建设</a></li>
+						<li><a href="">二级菜单</a></li>
+					</ul>
+				</li>
+			    <li>
+			    <a href="">信息管理</a>
+					<ul>
+						<li><a href="">系统管理</a></li>
+						<li><a href="">销售管理</a></li>
+						<li><a href="">采购管理</a></li>
+						<li><a href="">出库管理</a></li>
+					</ul>
+			    </li>
+			    <li>
+			    <a href="">人力资源</a>
+					<ul>
+						<li><a href="">二级菜单</a></li>
+						<li><a href="">二级菜单</a></li>
+						<li><a href="">二级菜单</a></li>
+						<li><a href="">二级菜单</a></li>
+						<li><a href="">二级菜单</a></li>
+					</ul>
+			    </li>
+            </ul>
+		</div><!--侧边菜单结束-->
+		<div class="span8"></div>
+	</div>
+</div>
+<!-- 内容结束 -->
+
+</body>
+</html>
