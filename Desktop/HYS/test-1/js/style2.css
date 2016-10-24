@@ -1,0 +1,101 @@
+@charset "gb2312";
+/* CSS Document */
+/*全局定义*/
+body,div,h1,h2,h3,h4,h5,h6,p,img,ul,ol,li{margin:0;padding:0;}
+body{font-family:"宋体",Arial, Helvetica;font-size:12px;}
+ul,ol,li{list-style-type:none;}
+img{border:none;}
+
+/*全局定义*/
+
+/*body{ color:#333; background:#fff;}*/
+a{outline: none; /* for Forefox */ } 
+a{star:expression(this.onFocus=this.blur()); /* for Ie*/ } 
+a:link,a:visited{ color:#333;  font-size:12px;}
+a:hover{ color:#de3237; text-decoration:none}
+.wrap{width:1004px; margin:0 auto;}
+/**top**/
+.top{ width:100%; background:#f7f7f7; 
+	border-bottom:1px 
+	solid #dad9d7; height:28px;
+	line-height:28px;}
+/**header**/
+.fr{
+   padding-right: 300px；
+}
+.head{padding: 20px;}
+/**主页内容**/
+.main{padding-top: 10px;}
+/*行业要闻*/
+.main{
+	font-size: 10px;
+	line-height: 10px;
+}
+/*底部内容*/
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.footer{
+    padding-top: 2px;
+}
+
+.link{width:940px;height:80px;margin-top:4px;padding-bottom:20px;}
+.link h1{width:1004px;height:39px;background:url(../images/link.PNG); overflow:hidden;}
+.link ul{width:1002px;height:60px;border:1px solid #dfdfdf;border-top:none;}
+.link ul li{float:left;padding:5px 10px 0 5px;}
+.link ul li a{color:#696969;}
+.link ul li a:hover{color:#de3437;text-decoration:underline;}
+
+
+
+
+/*集团建设部分*/
+#nav {
+position: absolute;
+font-size: 11px;
+opacity: 0.8;
+}
+#nav a {
+display: block;
+width: 100px;
+height: 15px;
+padding: 3px 5px 12px;
+background: #666;
+color: #fff;
+text-decoration: none;
+}
+#nav a:hover {
+background: #333;
+}
+#nav li {
+float: left;
+clear: left;
+width: 120px;
+background: #ccc;
+padding-bottom: 3px;
+}
+#nav ul {
+position: absolute;
+margin-left: 115px;
+margin-top: -30px;
+}
+#nav ul {
+display: none;
+}
+#nav li.show ul {
+display: block;
+}
+#nav li.show li ul {
+display: none;
+}
+#nav li li.show ul {
+display: block;
+}
+
+
