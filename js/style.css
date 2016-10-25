@@ -114,7 +114,7 @@ p {
   vertical-align: text-top;
   
   background-position: 14px 14spx;
-  background-repeat: no-repeat;
+ /* background-repeat: no-repeat;*/
 }
 
 .footer1{
