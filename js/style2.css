@@ -45,9 +45,9 @@ h1 {
     padding-top: 2px;
 }
 
-.link{width:940px;height:80px;margin-top:4px;padding-bottom:20px;}
-.link h1{width:1004px;height:39px;background:url(../images/link.PNG); overflow:hidden;}
-.link ul{width:1002px;height:60px;border:1px solid #dfdfdf;border-top:none;}
+.link{width:940px;height:80px;margin-top:2px;padding-bottom:20px;}
+.link h1{width:1004px;height:5px;/*background:url(../images/link.PNG); overflow:hidden;*/}
+.link ul{width:1002px;height:5px;/*border:1px solid #dfdfdf;border-top:none;*/}
 .link ul li{float:left;padding:5px 10px 0 5px;}
 .link ul li a{color:#696969;}
 .link ul li a:hover{color:#de3437;text-decoration:underline;}
