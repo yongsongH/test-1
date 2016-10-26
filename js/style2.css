@@ -97,5 +97,18 @@ display: none;
 #nav li li.show ul {
 display: block;
 }
+.content{
+        
+        font-family: Arial, Helvetica, 宋体;
+        font-size: 15px;
+        line-height: 1.66;
 
-
+}
+p {
+    display: block;
+    text-indent:2em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 1px;
+    -webkit-margin-end: 1px;
+}
