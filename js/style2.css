@@ -42,7 +42,7 @@ h1 {
     font-weight: bold;
 }
 
-.link{width:940px;height:80px;margin-top:2px;padding-bottom:20px;}
+.link{width:940px;height:10px;margin-top:2px;padding-bottom:20px;}
 .link ul{width:1002px;height:5px;}
 .link ul li{float:left;padding:5px 5px 0 5px;}
 .link ul li a{color:#696969;}
