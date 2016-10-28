@@ -108,3 +108,14 @@ p {
     -webkit-margin-start: 1px;
     -webkit-margin-end: 1px;
 }
+.pagination {
+  margin: 0;
+  padding-left: 280px;
+}
+.pagination.active{
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #428bca;
+   
+}
