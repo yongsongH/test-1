@@ -119,3 +119,11 @@ p {
     background-color: #428bca;
    
 }
+/*新闻中心部分*/
+.content>ul>li{
+        
+        text-indent:1em;
+        font-family: Arial, Helvetica, 宋体;
+        font-size: 25px;
+        line-height: 1.5;
+}
