@@ -9,28 +9,54 @@
     <meta http-equiv="Content-Type" content="药品信息管理系统; charset=utf-8" />
     
      <script language="javascript" type="text/javascript">
-			function menuFix() {
-			var sfEls = document.getElementById("nav").getElementsByTagName("li");
-			for (var i=0; i<sfEls.length; i++) {
-			sfEls[i].onmouseover=function() {
-			this.className+=(this.className.length>0? " ": "") + "show";
-			}
-			sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp("( ?|^)show\\b"), "");
-			}
-			}
+			function menuFix() 
+			{
+				var sfEls = document.getElementById("nav").getElementsByTagName("li");
+				for (var i=0; i<sfEls.length; i++) 
+				{
+					sfEls[i].onmouseover=function() 
+					{
+						this.className+=(this.className.length>0? " ": "") + "show";
+					}
+					sfEls[i].onmouseout=function() 
+					{
+						this.className=this.className.replace(new RegExp("( ?|^)show\\b"), "");
+					}
+				}
 			}
             window.onload=menuFix;
+            
+            function __doPostBack(str)
+			{
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			    {
+			    document.getElementById("news").innerHTML=xmlhttp.responseText;//获得字符串形式的响应数据。
+			    }
+			  }
+			xmlhttp.open("GET","文件在服务器上的位置"+str,true);
+			xmlhttp.send();
+			}
      </script>
 </head>
 <body>
  <!--top begin-->
 <div class="top">
  <div class="wrap">
-  <span class="fl">欢迎您来到<a href="./index3.html" title="回到首页" target="_blank">XX医药股份有限公司</a></span>
-  <span class="fr"><a href="#" title="登录" target="_blank">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <strong>登录</strong></a></span>
+	  <span class="fl">欢迎您来到<a href="./index3.html" title="回到首页" target="_blank">XX医药股份有限公司</a></span>
+	  <span class="fr"><a href="#" title="登录" target="_blank">
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <strong>登录</strong></a></span>
  </div>
 </div>
 <!--top end-->
@@ -39,16 +65,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="span6">
-			<a href="./index3.html" title="回到首页">
-			<img  id="logo" src="images/img_logo.png" alt="药品信息管理系统">
-			</a>
-		</div>
-		<div class="span6">
-		    <form class="form-search">
-                <input class="input-medium search-query" type="text"> 
-                <button type="submit" class="btn"><i class="icon-search"></i>搜索</button>
-              </form>
-		</div>
+				<a href="./index3.html" title="回到首页">
+				<img  id="logo" src="images/img_logo.png" alt="药品信息管理系统">
+				</a>
+			</div>
+			<div class="span6">
+			    <form class="form-search">
+	                <input class="input-medium search-query" type="text"> 
+	                <button type="submit" class="btn"><i class="icon-search"></i>搜索</button>
+	            </form>
+			</div>
 		</div>
 	 </div>
  </div>
@@ -58,62 +84,62 @@
 	<div class="row">
 		<div class="span12">
 			<nav id="navigation"  style="background-color:#E2E0F1">
-     <div class="container">
-            <div class="navbar">
-                <ul class="nav">
-                    <li ><a href="./index3.html">首页</a></li>
-                    <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      核心业务
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="#">制药事业部</a></li>
-                    <li><a href="#">销售事业部</a></li>
-                    <li><a href="#">物流分公司</a></li>
-                    <li><a href="#">供应链管理</a></li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      集团概况
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="#">产品展示</a></li>
-                    <li><a href="#">新闻中心</a></li>
-                    <li><a href="./jtgk.html">公司介绍</a></li>
-                    <li><a href="#">党组建设</a></li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      信息管理
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="#">系统管理</a></li>
-                    <li><a href="#">销售管理</a></li>
-                    <li><a href="#">采购管理</a></li>
-                    <li><a href="#">出库管理</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">人力资源</a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      联系方式
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a href="#">地址：广西省柳州市长风路4号</a></li>
-                    <li><a href="#">邮编：650500</a></li>
-                    <li><a href="#">监督、投诉热线:0772-2514 508  </a></li>
-                    <li><a href="#">监督、投诉邮箱:lzyy9988@sina.com</a></li>
-                    </ul>
-                    </li>   
-                </ul>
-           </div>
-         </div>  
+		     <div class="container">
+		            <div class="navbar">
+		                <ul class="nav">
+		                    <li ><a href="./index3.html">首页</a></li>
+		                    <li class="dropdown">
+		                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                      核心业务
+		                      <b class="caret"></b>
+		                    </a>
+		                    <ul class="dropdown-menu">
+		                    <li><a href="#">制药事业部</a></li>
+		                    <li><a href="#">销售事业部</a></li>
+		                    <li><a href="#">物流分公司</a></li>
+		                    <li><a href="#">供应链管理</a></li>
+		                    </ul>
+		                    </li>
+		                    <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                      集团概况
+		                      <b class="caret"></b>
+		                    </a>
+		                    <ul class="dropdown-menu">
+		                    <li><a href="#">产品展示</a></li>
+		                    <li><a href="#">新闻中心</a></li>
+		                    <li><a href="./jtgk.html">公司介绍</a></li>
+		                    <li><a href="#">党组建设</a></li>
+		                    </ul>
+		                    </li>
+		                    <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                      信息管理
+		                      <b class="caret"></b>
+		                    </a>
+		                    <ul class="dropdown-menu">
+		                    <li><a href="#">系统管理</a></li>
+		                    <li><a href="#">销售管理</a></li>
+		                    <li><a href="#">采购管理</a></li>
+		                    <li><a href="#">出库管理</a></li>
+		                    </ul>
+		                    </li>
+		                    <li><a href="#">人力资源</a></li>
+		                    <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                      联系方式
+		                      <b class="caret"></b>
+		                    </a>
+		                    <ul class="dropdown-menu">
+		                    <li><a href="#">地址：广西省柳州市长风路4号</a></li>
+		                    <li><a href="#">邮编：650500</a></li>
+		                    <li><a href="#">监督、投诉热线:0772-2514 508  </a></li>
+		                    <li><a href="#">监督、投诉邮箱:lzyy9988@sina.com</a></li>
+		                    </ul>
+		                    </li>   
+		                </ul>
+		           </div>
+		       </div>  
    </nav>
 <!-- 导航菜单结束 -->
 <!-- 内容开始 -->
@@ -209,7 +235,7 @@
 			<div class="text-center">
 						
 					</div>
-			<div class="content">
+			<div class="content" id="news">
 			        <ul class="lead">
 			        	<li>
 			        		<a href="" title="公司举办庆祝建党95周年活动">
@@ -261,9 +287,9 @@
 					  <ul class="pagination">
 					  <li class="disabled"><a href="#">&laquo;</a></li>
 					  <li class="active" ><a href="#" style="background-color: #666">1</a></li>
-					  <li><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">&raquo;</a></li>
+					  <li><a href="javascript:__doPostBack('newPager2')">2</a></li>
+					  <li><a href="javascript:__doPostBack('newPager3')">3</a></li>
+					  <li><a href="javascript:__doPostBack('newPager4')">&raquo;</a></li>
 					</ul>
                 </div>
             </div>
@@ -297,7 +323,5 @@
 <!-- 底部结束 -->
       <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-
-
 </body>
 </html>
